@@ -1,0 +1,86 @@
+{
+  "expo": {
+    "name": "PicAname",
+    "slug": "picaname",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "picaname",
+    "userInterfaceStyle": "light",
+    "android": {
+      "package": "com.yourcompany.picaname",
+      "googleServicesFile": "./google-services.json",
+      "permissions": [
+        "CAMERA",
+        "ACCESS_FINE_LOCATION",
+        "VIBRATE",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "softwareKeyboardLayoutMode": "pan",
+      "jsEngine": "hermes",
+      "versionCode": 1,
+      "userInterfaceStyle": "light"
+    },
+    "ios": {
+      "bundleIdentifier": "com.yourcompany.picaname",
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "supportsTablet": true,
+      "userInterfaceStyle": "light",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Den här appen använder kameran för att ta bilder.",
+        "NSLocationWhenInUseUsageDescription": "Den här appen använder din plats för att hitta namnförslag nära dig."
+      }
+    },
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFFFFFF"
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "minSdkVersion": 24,
+            "compileSdkVersion": 35,
+            "targetSdkVersion": 35
+          },
+          "ios": {
+            "deploymentTarget": "15.1"
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "firebase": {
+        "apiKey": "AIzaSyBgxJlc9MBHaH2ZCd4QjZtwX5Unl-egtvM",
+        "authDomain": "picaname-app.firebaseapp.com",
+        "projectId": "picaname-app",
+        "storageBucket": "picaname-app.appspot.com",
+        "messagingSenderId": "984689023810",
+        "appId": "1:984689023810:android:7a7045147eb1fbbf3446db"
+      },
+      "eas": {
+        "projectId": "1d085ff4-3a9d-40af-9c31-a8ad33b3b1b9"
+      }
+    },
+    "updates": {
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "locales": {
+      "sv": {
+        "name": "PicAname",
+        "description": "Din app för att hitta det perfekta namnet till ditt barn!"
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "984689023810",
+    "project_id": "picaname-app",
+    "firebase_url": "https://picaname-app.firebaseio.com",
+    "storage_bucket": "picaname-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:984689023810:android:7a7045147eb1fbbf3446db",
+        "android_client_info": {
+          "package_name": "com.yourcompany.picaname"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "984689023810-t9ekouro3u0nk1q5kphdhf315eest70p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yourcompany.picaname",
+            "certificate_hash": "09fd4cbe52b236a7597c6e355808781142a81297"
+          }
+        },
+        {
+          "client_id": "984689023810-0ogunckrllke4577k5ggounbljr4mh51.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgxJlc9MBHaH2ZCd4QjZtwX5Unl-egtvM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "984689023810-0ogunckrllke4577k5ggounbljr4mh51.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "984689023810-kfa21r18cd0avr26n8b4ihf534qe3tte.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.exempel.picaname"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,29 @@
+{
+  "build": {
+    "development": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk",
+        "autoIncrement": true
+      },
+      "env": {
+        "NODE_ENV": "development"
+      }
+    },
+    "production": {
+      "distribution": "store",
+      "android": {
+        "buildType": "app-bundle",
+        "autoIncrement": "versionCode"
+      },
+      "env": {
+        "NODE_ENV": "production",
+        "FORCE_DEV_DEPENDENCIES": "true"
+      }
+    }
+  },
+  "cli": {
+    "version": ">=0.54.0",
+    "appVersionSource": "remote"
+  }
+}

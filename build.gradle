@@ -1,0 +1,38 @@
+buildscript {
+    ext {
+        kotlinVersion = '1.8.22' // Definiera Kotlin-versionen konsekvent
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        // Android Gradle-plugin
+        classpath 'com.android.tools.build:gradle:8.3'
+        // Firebase Google Services plugin
+        classpath 'com.google.gms:google-services:4.3.15'
+        // Kotlin Gradle-plugin
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        // JitPack för tredjepartsberoenden
+        maven { url 'https://www.jitpack.io' }
+        // GitHub Packages för React Native
+        maven {
+            url 'https://maven.pkg.github.com/facebook/react-native'
+            credentials {
+                username = project.findProperty("github.username") ?: ""
+                password = project.findProperty("github.token") ?: ""
+            }
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir // Rensar byggmappen
+}

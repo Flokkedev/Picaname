@@ -1,0 +1,84 @@
+{
+  "name": "picaname",
+  "version": "1.0.0",
+  "license": "0BSD",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx expo start --dev-client",
+    "android": "npx expo run:android",
+    "ios": "npx expo run:ios",
+    "web": "npx expo start --web",
+    "postinstall": "patch-package",
+    "dev": "code . && npx expo start"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-export-namespace-from": "^7.25.9",
+    "@expo/config-plugins": "~9.0.0",
+    "@expo/metro-runtime": "^4.0.1",
+    "@expo/prebuild-config": "~8.0.0",
+    "@react-native-async-storage/async-storage": "1.23.1",
+    "@react-native-firebase/app": "^21.7.1",
+    "@react-navigation/native": "^7.0.14",
+    "@react-navigation/native-stack": "^7.2.0",
+    "expo": "^52.0.30",
+    "expo-router": "~4.0.17",
+    "expo-splash-screen": "~0.29.21",
+    "firebase": "^10.14.1",
+    "glob": "^9.3.5",
+    "react": "18.3.1",
+    "react-canvas-confetti": "^2.0.7",
+    "react-dom": "18.3.1",
+    "react-native": "0.76.6",
+    "react-native-gesture-handler": "~2.20.2",
+    "react-native-reanimated": "^3.3.0",
+    "react-native-safe-area-context": "4.12.0",
+    "react-native-screens": "~4.4.0",
+    "react-native-svg": "15.8.0",
+    "rimraf": "^5.0.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.0",
+    "@babel/preset-react": "^7.26.3",
+    "@eslint/js": "^9.19.0",
+    "@react-native-community/cli": "latest",
+    "@types/react": "~18.3.12",
+    "@typescript-eslint/eslint-plugin": "^8.22.0",
+    "babel-plugin-flow-react-proptypes": "^26.0.0",
+    "eslint": "^9.19.0",
+    "eslint-config-recommended": "^4.1.0",
+    "eslint-plugin-react": "^7.37.4",
+    "expo-build-properties": "^0.13.2",
+    "globals": "^15.14.0",
+    "metro": "^0.81.1",
+    "metro-config": "^0.81.1",
+    "metro-react-native-babel-preset": "^0.77.0",
+    "metro-react-native-babel-transformer": "^0.77.0",
+    "metro-resolver": "^0.81.1",
+    "patch-package": "^8.0.0",
+    "react-native-svg-transformer": "^1.5.0",
+    "typescript": "^5.2.0",
+    "typescript-eslint": "^8.22.0"
+  },
+  "private": true,
+  "expo": {
+    "router": {
+      "appRoot": "./app"
+    },
+    "doctor": {
+      "reactNativeDirectoryCheck": {
+        "exclude": [
+          "react-native-confetti-cannon",
+          "@babel/plugin-transform-export-namespace-from",
+          "@expo/config-plugins",
+          "@expo/metro-runtime",
+          "@expo/prebuild-config",
+          "firebase",
+          "glob",
+          "rimraf"
+        ],
+        "listUnknownPackages": false
+      }
+    }
+  }
+}
